@@ -6,7 +6,14 @@ class TV{
 	boolean power ;
 	int channel ;
 	String maker;
+	static int tax;
 	
+	static void set_tax(int p_tax){
+		tax = p_tax;
+	}
+	static void get_tex(){
+		System.out.println("tax : " + tax);
+	}
 	// constructor 생성자  //객체가 생성될때 초기값을 설정하거나 필요한 자원을 할당할때 사용한다.
 	TV(String p_maker){          //보통 생성자는 클래스이름과 같이 쓴다
 		power = false;
@@ -19,7 +26,7 @@ class TV{
 		System.out.println("Maker : " +maker);
 	}
 	//TV의 기능적 측면을 정의한다.
-	void power() {
+	void power(){
 		power = !power;
 		if(power){
 			System.out.println("Power Status : ON");
@@ -66,9 +73,12 @@ public class Ex6_1 {
 		// TODO Auto-generated method stub
 		TV tv1 = new TV("SAMSUNG");
 		tv1.chkMaker();
+		tv1.set_tax(2000);
+		tv1.get_tex();
 		
 		TV tv2 = new TV("LG Electronics");
 		tv2.chkMaker();
+		tv2.get_tex();
 		
 		tv1.power ();
 		tv2.power();

@@ -44,7 +44,7 @@ public class Ex5_20 {
 				System.out.println("잘못입력하셧습니다. 다시입력해주세요");
 				continue;
 			}
-			board[x][y] = shipBoard[x-1][y-1]==1 ? 'O' : 'X';
+			board[x][y] = shipBoard[x-1][y-1]==1 ? 'O' : 'X';   //식 ? 참일때반환 : 거짓일때반환 
 			for(int i =0; i<size ; i++)
 				System.out.println(board[i]);
 			System.out.println();
