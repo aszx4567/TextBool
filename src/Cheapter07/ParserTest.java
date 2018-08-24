@@ -38,7 +38,7 @@ public class ParserTest {
 		Parseable parser = ParserManager.getParser("XML");
 		parser.parse("document.xml");
 		parser = ParserManager.getParser("HTML");
-		parser.parse("document.html");
+		parser.parse("document.html" );
 	}
 
 }
