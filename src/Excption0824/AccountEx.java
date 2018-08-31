@@ -6,11 +6,11 @@ public class AccountEx {
 		Account ac = new Account();
 		//예금하기
 		ac.deposite(10000);
-		System.out.println("예금액 : " + ac.getBalance());
+		System.out.println("예금액 : " + ac.getBalance()+"원");
 		
 		//출금하기
 		try{
-			ac. widthdraw(30000);
+			ac. withdraw(30000);
 		}catch(BalanceInsufficientException e){
 			String massage = e. getMessage();
 			System.out.println(massage);;
